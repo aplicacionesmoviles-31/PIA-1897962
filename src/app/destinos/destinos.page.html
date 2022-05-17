@@ -1,0 +1,195 @@
+<ion-header>
+    <ion-toolbar>
+      <br>
+          <ion-title><ion-icon name="logo-instagram"></ion-icon>INSTA-CLONE</ion-title>
+      <br>
+          
+      <ion-avatar >
+          <ion-img src="{{usuario.fotoPerfil}}" ></ion-img>
+      </ion-avatar>
+      <br>
+          
+      <ion-buttons slot="secondary">
+          <img *ngFor="let usuario of usuarios" [src]="usuario.imagen" class="storyCircle" (click)="showStory(usuario.nombre)">
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+
+    <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+        <ion-item (click)="addDirection()">
+            <ion-label class="normal">Ubicación</ion-label>
+            <ion-buttons>
+                <ion-button>
+                    <ion-icon slot="icon-only" color="danger" name="location"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+        </ion-item>
+    </form>
+        <ion-grid>
+          <ion-row> <!--Fila de foto-->
+            <ion-col>
+             <img src="assets/imagenes/Doom.jpg" alt="" height="100%" width="100%">
+            </ion-col>
+          </ion-row>
+          <ion-row> <!--Fila de Opciones-->
+            <ion-col  size="1">
+             <ion-icon name="heart-outline"></ion-icon>
+            </ion-col>
+            <ion-col  size="1">
+             <ion-icon name="chatbubble-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="1">
+             <ion-icon name="share-outline"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-row> <!--Fila de comentarions-->
+           <ion-col>
+             <strong>key</strong> LOL
+           </ion-col>
+          </ion-row>
+          <ion-row> <!--Fila de Comentario-->
+           <ion-col size="1">
+             <img src="shadow.jpg" alt="">
+           </ion-col>
+            <ion-col>
+              <ion-input placeholder="Agrega un comentario..."></ion-input>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <br>
+
+        <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+            <ion-item (click)="addDirection()">
+                <ion-label class="normal">Ubicación</ion-label>
+                <ion-buttons>
+                    <ion-button>
+                        <ion-icon slot="icon-only" color="danger" name="location"></ion-icon>
+                    </ion-button>
+                </ion-buttons>
+            </ion-item>
+        </form>
+            <ion-grid>
+              <ion-row> <!--Fila de foto-->
+                <ion-col>
+                 <img src="assets/imagenes/pacman.jpg" alt="" height="100%" width="100%">
+                </ion-col>
+              </ion-row>
+              <ion-row> <!--Fila de Opciones-->
+                <ion-col  size="1">
+                 <ion-icon name="heart-outline"></ion-icon>
+                </ion-col>
+                <ion-col  size="1">
+                 <ion-icon name="chatbubble-outline"></ion-icon>
+                </ion-col>
+                <ion-col size="1">
+                 <ion-icon name="share-outline"></ion-icon>
+                </ion-col>
+              </ion-row>
+              <ion-row> <!--Fila de comentarions-->
+               <ion-col>
+                 <strong>manu</strong> WOW
+               </ion-col>
+              </ion-row>
+              <ion-row> <!--Fila de Comentario-->
+               <ion-col size="1">
+                 <img src="shadow.jpg" alt="">
+               </ion-col>
+                <ion-col>
+                  <ion-input placeholder="Agrega un comentario..."></ion-input>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+
+
+            <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+                <ion-item (click)="addDirection()">
+                    <ion-label class="normal">Ubicación</ion-label>
+                    <ion-buttons>
+                        <ion-button>
+                            <ion-icon slot="icon-only" color="danger" name="location"></ion-icon>
+                        </ion-button>
+                    </ion-buttons>
+                </ion-item>
+            </form>
+                <ion-grid>
+                  <ion-row> <!--Fila de foto-->
+                    <ion-col>
+                     <img src="assets/imagenes/Sonic.png" alt="" height="100%" width="100%">
+                    </ion-col>
+                  </ion-row>
+                  <ion-row> <!--Fila de Opciones-->
+                    <ion-col  size="1">
+                     <ion-icon name="heart-outline"></ion-icon>
+                    </ion-col>
+                    <ion-col  size="1">
+                     <ion-icon name="chatbubble-outline"></ion-icon>
+                    </ion-col>
+                    <ion-col size="1">
+                     <ion-icon name="share-outline"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row> <!--Fila de comentarions-->
+                   <ion-col>
+                     <strong>jose</strong> it's amazing
+                   </ion-col>
+                  </ion-row>
+                  <ion-row> <!--Fila de Comentario-->
+                   <ion-col size="1">
+                     <img src="shadow.jpg" alt="">
+                   </ion-col>
+                    <ion-col>
+                      <ion-input placeholder="Agrega un comentario..."></ion-input>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+
+
+
+                <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+                    <ion-item (click)="addDirection()">
+                        <ion-label class="normal">Ubicación</ion-label>
+                        <ion-buttons>
+                            <ion-button>
+                                <ion-icon slot="icon-only" color="danger" name="location"></ion-icon>
+                            </ion-button>
+                        </ion-buttons>
+                    </ion-item>
+                </form>
+                    <ion-grid>
+                      <ion-row> <!--Fila de foto-->
+                        <ion-col>
+                         <img src="assets/imagenes/DonkeyKongCountry.jpg" alt="" height="100%" width="100%">
+                        </ion-col>
+                      </ion-row>
+                      <ion-row> <!--Fila de Opciones-->
+                        <ion-col  size="1">
+                         <ion-icon name="heart-outline"></ion-icon>
+                        </ion-col>
+                        <ion-col  size="1">
+                         <ion-icon name="chatbubble-outline"></ion-icon>
+                        </ion-col>
+                        <ion-col size="1">
+                         <ion-icon name="share-outline"></ion-icon>
+                        </ion-col>
+                      </ion-row>
+                      <ion-row> <!--Fila de comentarions-->
+                       <ion-col>
+                         <strong>vane</strong> :0
+                       </ion-col>
+                      </ion-row>
+                      <ion-row> <!--Fila de Comentario-->
+                       <ion-col size="1">
+                         <img src="shadow.jpg" alt="">
+                       </ion-col>
+                        <ion-col>
+                          <ion-input placeholder="Agrega un comentario..."></ion-input>
+                        </ion-col>
+                      </ion-row>
+                    </ion-grid>
+
+
+
+</ion-content>
