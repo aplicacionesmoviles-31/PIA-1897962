@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.democapacitor.fcfm',
-  appName: 'ionic-basic',
+  appName: 'PIA-1897962',
   webDir: 'www',
   bundledWebRuntime: false
 };
